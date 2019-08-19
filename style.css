@@ -1,4 +1,6 @@
-
+*{
+  box-sizing: border-box;
+}
 .hover a:hover{
   color: #bb974e !important;
   text-decoration: none;
@@ -179,5 +181,27 @@ div{
 @media screen and (max-width:986px){
   .mapouter{
     width: 0px;
+  }
+}
+
+
+@media screen and (max-width:800px) and (min-width:300px ){
+  .button{
+    visibility: visible;
+  }
+  .navbar{
+    visibility: hidden;
+    padding-top: 0px;
+    margin: 0px;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width:3035px) and (min-width:800px ){
+  .navbar{
+    visibility: visible;
+    
+  }
+  .button{
+    visibility: hidden;
   }
 }
