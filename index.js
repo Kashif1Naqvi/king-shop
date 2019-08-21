@@ -23,3 +23,17 @@ function handleShow(){
     btn.style.display= 'block'
   }
 }
+
+function openNav() {
+  document.getElementById("myNav").style.display = "block";
+  console.log("world")
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.display = "none";
+}
+
+
+function prevent(event){
+  event.preventDefault()
+}

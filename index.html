@@ -11,8 +11,10 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 </head>
-<body>
+<body class="bg-light" >
 <div class="container-fluid" >
   <div class="bg-dark"  >
     <p class="text-light text-center p-2 mb-1 " style="font-size:12px; width: 100%; " >FREE SHIPPING ON ANY ORDER</p>
@@ -22,14 +24,83 @@
       <div class="figure ml-5 mr-5 text-center pt-5 ">
         <img src="https://cdn.shopify.com/s/files/1/0691/8855/files/LOGO_KING2_2x_942d44ea-bdf5-470c-a427-4be65de38318.png?v=1516995751" alt="avatar" class="" width="50%" height="auto" >
       </div>
-      <div >
-          <a  href="acount/login.html"><svg   width="40px" version="1.1" class="svg cart" xmlns="//www.w3.org  /2000/svg" xmlns:xlink="//www.w3.org  /1999/xlink" x="0px" y="0px" width="90px" height="90px" viewBox="0 0 90 90" enable-background="new 0 0 90 90" xml:space="preserve"><g><path d="M72.715,29.241H16.074c-4.416,0-2.961,3.613-2.961,8.03l3.802,38.897c0,4.416,3.614,4.229,8.031,4.229h38.896c4.416,0,8.664,0.188,8.664-4.229l3.167-38.897C75.674,32.854,77.131,29.241,72.715,29.241z"></path><path d="M44.394,10.491c7.146,0,12.961,5.814,12.961,12.961h3.543c0-9.101-7.403-16.505-16.504-16.505c-9.1,0-16.503,7.404-16.503,16.505h3.543C31.434,16.306,37.249,10.491,44.394,10.491z"></path></g></svg></a> 
-          <a  href="#"><svg   width="40px" version="1.1" class="svg search" xmlns="//www.w3.org  /2000/svg" xmlns:xlink="//www.w3.org  /1999/xlink" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"><g><g><path d="M91.473,78.791L75.877,63.193c4.237-6.103,6.729-13.512,6.729-21.49c0-20.844-16.963-37.799-37.806-37.799C23.956,3.904,7,20.859,7,41.703c0,20.849,16.956,37.803,37.8,37.803c5.744,0,11.189-1.29,16.069-3.593l16.742,16.744c1.805,1.799,4.214,2.79,6.777,2.79c2.627,0,5.105-1.032,6.979-2.901C95.188,88.725,95.234,82.55,91.473,78.791z M22.119,41.703c0-12.505,10.176-22.682,22.681-22.682c12.507,0,22.683,10.177,22.683,22.682c0,12.509-10.176,22.686-22.683,22.686C32.295,64.389,22.119,54.212,22.119,41.703z"></path></g></g></svg></a> 
-          <a  href="#"><svg   width="40px" version="1.1" class="svg account" xmlns="//www.w3.org  /2000/svg" xmlns:xlink="//www.w3.org  /1999/xlink" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"><path d="M87.919,91.087l-3.563-29.478c-0.592-4.902-5.117-8.914-10.059-8.914h-48.6c-4.937,0-9.463,4.012-10.055,8.914l-3.565,29.478C11.485,95.988,15.04,100,19.98,100h43.195c4.939,0,12.771,0,17.4,0C85.207,100,88.511,95.988,87.919,91.087z"></path><circle cx="49.999" cy="22.869" r="22.869"></circle></svg></a> 
-          <a class="button" id="show" >hello </a>
-      </div>
+      <div>
+        <a class="button " data-toggle="modal" data-target="#modal"><svg  style="fill: grey;" xmlns="//www.w3.org  /2000/svg" xmlns:xlink="//www.w3.org  /1999/xlink" x="0px" y="0px" width="60px" height="60px" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve"><g><rect x="18" y="20" width="25" height="4"></rect><rect x="18" y="28" width="25" height="4"></rect><rect x="18" y="36" width="25" height="4"></rect></g></svg></a>
+        <a  href="acount/login.html"><svg style="fill: grey;"   width="40px" version="1.1" class="svg cart" xmlns="//www.w3.org  /2000/svg" xmlns:xlink="//www.w3.org  /1999/xlink" x="0px" y="0px" width="90px" height="90px" viewBox="0 0 90 90" enable-background="new 0 0 90 90" xml:space="preserve"><g><path d="M72.715,29.241H16.074c-4.416,0-2.961,3.613-2.961,8.03l3.802,38.897c0,4.416,3.614,4.229,8.031,4.229h38.896c4.416,0,8.664,0.188,8.664-4.229l3.167-38.897C75.674,32.854,77.131,29.241,72.715,29.241z"></path><path d="M44.394,10.491c7.146,0,12.961,5.814,12.961,12.961h3.543c0-9.101-7.403-16.505-16.504-16.505c-9.1,0-16.503,7.404-16.503,16.505h3.543C31.434,16.306,37.249,10.491,44.394,10.491z"></path></g></svg></a> 
+        <a data-toggle="modal" data-target="#searchbar" href="#"><svg   width="40px" style="fill: grey;" version="1.1" class="svg search" xmlns="//www.w3.org  /2000/svg" xmlns:xlink="//www.w3.org  /1999/xlink" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"><g><g><path d="M91.473,78.791L75.877,63.193c4.237-6.103,6.729-13.512,6.729-21.49c0-20.844-16.963-37.799-37.806-37.799C23.956,3.904,7,20.859,7,41.703c0,20.849,16.956,37.803,37.8,37.803c5.744,0,11.189-1.29,16.069-3.593l16.742,16.744c1.805,1.799,4.214,2.79,6.777,2.79c2.627,0,5.105-1.032,6.979-2.901C95.188,88.725,95.234,82.55,91.473,78.791z M22.119,41.703c0-12.505,10.176-22.682,22.681-22.682c12.507,0,22.683,10.177,22.683,22.682c0,12.509-10.176,22.686-22.683,22.686C32.295,64.389,22.119,54.212,22.119,41.703z"></path></g></g></svg></a> 
+        <a  href="#"><svg   width="40px" style="fill: grey;" version="1.1" class="svg account" xmlns="//www.w3.org  /2000/svg" xmlns:xlink="//www.w3.org  /1999/xlink" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"><path d="M87.919,91.087l-3.563-29.478c-0.592-4.902-5.117-8.914-10.059-8.914h-48.6c-4.937,0-9.463,4.012-10.055,8.914l-3.565,29.478C11.485,95.988,15.04,100,19.98,100h43.195c4.939,0,12.771,0,17.4,0C85.207,100,88.511,95.988,87.919,91.087z"></path><circle cx="49.999" cy="22.869" r="22.869"></circle></svg></a> 
+        <div class="modal text-center  "  id="searchbar" tabindex="-1" role="dialog" aria-labelledby="searchbarLabel" aria-hidden="true"  >
+          <div class="modal-dailog" role="document" >
+            <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close bg-dark " data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" style="fill: white;" >&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                <h5>Search the store</h5>
+                <form onsubmit="prevent(event)"  class="form p-5 text-center " >
+                    <div class="input-group text-center " >
+                        <i class="fa fa-user icon"></i> 
+                        <input  class="form-control font-weight-bold  offset-3 " style="width: 40%; background-color:#fff; border: 1px solid darkslategray; color: #7f7f7f !important; height: 56px; font-family: Montserrat,sans-serif; border-radius:0; "   type="text" placeholder="Type keywords and hit enter" >
+                        <div class="input-group-append"> 
+                            <a href="/search.html"><span class="input-group-text"><svg version="1.1" style="fill: black; width:40px; height:40px; " class="svg search" xmlns="//www.w3.org  /2000/svg" xmlns:xlink="//www.w3.org  /1999/xlink" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve"><g><g><path d="M91.473,78.791L75.877,63.193c4.237-6.103,6.729-13.512,6.729-21.49c0-20.844-16.963-37.799-37.806-37.799C23.956,3.904,7,20.859,7,41.703c0,20.849,16.956,37.803,37.8,37.803c5.744,0,11.189-1.29,16.069-3.593l16.742,16.744c1.805,1.799,4.214,2.79,6.777,2.79c2.627,0,5.105-1.032,6.979-2.901C95.188,88.725,95.234,82.55,91.473,78.791z M22.119,41.703c0-12.505,10.176-22.682,22.681-22.682c12.507,0,22.683,10.177,22.683,22.682c0,12.509-10.176,22.686-22.683,22.686C32.295,64.389,22.119,54.212,22.119,41.703z"></path></g></g>  </svg></span></a>
+                        </div>
+                      </div>
+                  </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal text-center"  id="modal" tabindex="-1" role="dialog" aria-labelledby="searchbarLabel" aria-hidden="true"  >
+            <div class="modal-dailog" role="document" >
+              <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close bg-dark " data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true" style="fill: white;" >&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-block justify-content-center">
+                        <ul  >
+                            <li class="collection" >
+                                <a class="text-dark mb-4" style="text-decoration: none;"   data-toggle = "collapse" href="#menu"  role="navigation" aria-expanded="false" aria-controls="menu"  >  <!--/collections/all-->
+                                  Collections
+                                  <svg version="1.0" class="svg arrow" xmlns="//www.w3.org  /2000/svg" xmlns:xlink="//www.w3.org  /1999/xlink" x="0px" y="0px" width="7px" height="4px" viewBox="0 0 7 4" enable-background="new 0 0 7 4" xml:space="preserve"><polygon points="7.006,-0.044 3.5,3.961 -0.006,-0.044 "></polygon></svg>
+                                </a>
+                              </li>
+                          <ul class="navbar-nav collapse justify-content-center" id='menu'>
+                            <div class="text-center  " >
+                                <li class="nav-item hover" >
+                                    <a class="nav-link"  href="/collections/all">All</a>
+                                  </li><hr>
+                                  <li class="nav-item hover">
+                                    <a class="nav-link"  href="/collections/accessories">Accessories</a>
+                                  </li><hr>
+                                  <li class="nav-item hover">
+                                    <a class="nav-link"  href="/collections/furniture">Cosmetics </a>
+                                  </li><hr>
+                                  <li class="nav-item hover" >
+                                    <a class="nav-link"  href="/collections/gadgets">Gadgets</a>
+                                  </li><hr>
+                            </div>
+                          </ul>
+                          <ul  style="display: block;">
+                            <li class="nav-item hover" ><a class="nav-link" href="about.html" >About Us</a> </li>
+                            <li class="nav-item hover" ><a class="nav-link" href="/blogs/news" >Our Blog</a> </li>
+                            <li class="nav-item hover" ><a class="nav-link" href="/pages/theme-features" >Theme Features</a> </li>
+                            <li class="nav-item hover" ><a class="nav-link" href="/pages/contact-us" >Contact Us</a> </li>
+                            <li class="nav-item hover" ><a class="nav-link" href="#" >Newsletter</a> </li>
+                          </ul>
+                        </ul>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
       <nav class="navbar">
-        <div id="nav" class="d-block justify-content-center">
+        <div  class="d-block justify-content-center">
           <ul class="navbar-nav" >
             <li class="collection" >
               <a class="text-dark mb-4  " style="text-decoration: none;  "   data-toggle = "collapse" href="#menu"  role="navigation" aria-expanded="false" aria-controls="menu"  >  <!--/collections/all-->
@@ -54,15 +125,22 @@
               </div>
             </ul>
             <ul class="navbar-nav  " style="display: block;">
-              <li class="nav-item hover" ><a class="nav-link" href="/pages/about-us" >About Us</a> </li>
+              <li class="nav-item hover" ><a class="nav-link" href="about.html" >About Us</a> </li>
               <li class="nav-item hover" ><a class="nav-link" href="/blogs/news" >Our Blog</a> </li>
               <li class="nav-item hover" ><a class="nav-link" href="/pages/theme-features" >Theme Features</a> </li>
               <li class="nav-item hover" ><a class="nav-link" href="/pages/contact-us" >Contact Us</a> </li>
               <li class="nav-item hover" ><a class="nav-link" href="#" >Newsletter</a> </li>
-            </ul>        
+            </ul>
+            <ul class="navbar-nav list pt-5 mt-5" style="display: flex; flex-direction:row; " >
+                <li class="list-item hover" ><a class="nav-link" href="https://twitter.com" ><img style="fill: white;" src="images/twitter-logo.svg" alt="" width="50%" ></a> </li>
+                <li class="list-item hover" ><a class="nav-link" href="https://facebook.com" ><img style="fill: grey;" src="images/facebook-logo.svg" alt="" width="50%" ></a> </li>
+                <li class="list-item hover" ><a class="nav-link" href="#" ><img style="fill: grey;" src="images/vimeo-logo.svg" alt="" width="50%"></a> </li>
+                <li class="list-item hover" ><a class="nav-link" href="https://linkdin.com" ><img style="fill: grey;" src="images/linkedin-logo.svg" alt="" width="50%"></a> </li>
+            </ul>
+            <p class="pt-3 mt-4 hover" >Copyright © 2019 King <a style=" color: #bb974e !important;" href="index.html">Powered by Shopify</a> </p>
           </ul>
         </div>
-      </nav>
+      
     </div>  
     <div class="col-12 col-sm-8 col-md-10 col-lg-10 col-xl-10   container ">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -99,97 +177,107 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-      <div class="row" >
-        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="padding: 0px;" >
-            <div class="main">
-                <a href="/products/key-fold">
-                  <img class="image" width="100%"  src="https://cdn.shopify.com/s/files/1/0691/8855/products/5_thumb_f83c56a7-fa26-4b93-80f4-a488246c9b2e_640x.jpg?v=1543233654" alt="">
-                  <div class="overlay">
-                    <div class="text-dark" >
-                        <h4>Pen Holder</h4>
-                        <hr style="background-color: red;" width="40px" >
-                        <div class="font-weight-bold">
-                          <strong>$23.00</strong>
-                        </div>
-                    </div>
-                  </div>
-                </a>
-            </div>
-            <div class="main">
-              <a href="/products/louis-erard">
-                  <img width="100%" src="https://cdn.shopify.com/s/files/1/0691/8855/products/1_640x.jpg?v=1543224885" alt="" class="image" >
+      <div class="fade-right" >
+        <div class="row" >
+          <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="padding: 0px;" >
+              <div class="main">
+                  <a href="/products/key-fold">
+                    <img class="image" width="100%"  src="https://cdn.shopify.com/s/files/1/0691/8855/products/5_thumb_f83c56a7-fa26-4b93-80f4-a488246c9b2e_640x.jpg?v=1543233654" alt="">
                     <div class="overlay">
-                        <div class="text-dark" >
-                          <h4>CUCKOO CLOCK</h4>
+                      <div class="text-dark" >
+                          <h4>Pen Holder</h4>
                           <hr style="background-color: red;" width="40px" >
                           <div class="font-weight-bold">
-                            <strong>$130.00</strong>
+                            <strong>$23.00</strong>
                           </div>
-                        </div> 
+                      </div>
                     </div>
-              </a>
-            </div>  
-          </div>
-          <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="padding: 0px;"   >
-            <div class="main">
-              <a href="/products/withings-activite">
-                <img class="image" width="100%" src="https://cdn.shopify.com/s/files/1/0691/8855/products/4_640x.jpg?v=1543227414" alt="">
-                  <div class="overlay">
-                    <div class="text-dark" > 
-                        <h4>Active watch</h4>
+                  </a>
+              </div>
+              <div class="main">
+                <a href="/products/louis-erard">
+                    <img width="100%" src="https://cdn.shopify.com/s/files/1/0691/8855/products/1_640x.jpg?v=1543224885" alt="" class="image" >
+                      <div class="overlay">
+                          <div class="text-dark" >
+                            <h4>CUCKOO CLOCK</h4>
+                            <hr style="background-color: red;" width="40px" >
+                            <div class="font-weight-bold">
+                              <strong>$130.00</strong>
+                            </div>
+                          </div> 
+                      </div>
+                </a>
+              </div>  
+            </div>
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="padding: 0px;"   >
+              <div data-aos="fade-up-right" >
+                <div class="main">
+                  <a href="/products/withings-activite">
+                    <img class="image" width="100%" src="https://cdn.shopify.com/s/files/1/0691/8855/products/4_640x.jpg?v=1543227414" alt="">
+                      <div class="overlay">
+                        <div class="text-dark" > 
+                            <h4>Active watch</h4>
+                            <hr style="background-color: red;" width="40px" >
+                            <div class="font-weight-bold">
+                              <strong>$129.00</strong>
+                            </div>
+                        </div>
+                      </div>
+                  </a>
+                </div>
+              </div>
+              <div data-aos="flip-left" >
+                <div class="main">
+                  <a href="/products/molded-plywood-lounge-chair">
+                    <img class="image" width="100%" src="https://cdn.shopify.com/s/files/1/0691/8855/products/15_640x.jpg?v=1543232780" alt="">
+                    <div class="overlay">
+                      <div class="text-dark" >
+                        <h4>SCOTCH HOLDER</h4>
+                        <hr style="background-color: red;" width="40px" >
+                        <div class="price">
+                          <strong>$24.00</strong>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="padding: 0px;" >
+              <div data-aos="flip-up" >
+                <div class="main bg-light ">
+                  <a href="/products/maple-ipad-sleeve">
+                    <img width="100%" class="image"  src="https://cdn.shopify.com/s/files/1/0691/8855/products/2_640x.jpg?v=1543225440" alt="Retro Radio" >
+                    <div class="overlay">
+                      <div class="text-dark" >
+                        <h4>RETRO RADIO</h4>
                         <hr style="background-color: red;" width="40px" >
                         <div class="font-weight-bold">
-                          <strong>$129.00</strong>
+                          <p class="text-muted" >FROM</p><strong>$187.00</strong>
                         </div>
+                      </div>
                     </div>
-                  </div>
-              </a>
-            </div>
-            <div class="main">
-              <a href="/products/molded-plywood-lounge-chair">
-                <img class="image" width="100%" src="https://cdn.shopify.com/s/files/1/0691/8855/products/15_640x.jpg?v=1543232780" alt="">
-                <div class="overlay">
-                  <div class="text-dark" >
-                    <h4>SCOTCH HOLDER</h4>
-                    <hr style="background-color: red;" width="40px" >
-                    <div class="price">
-                      <strong>$24.00</strong>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="padding: 0px;" >
-            <div class="main bg-light ">
+                  </a>
+              </div>
+              </div>
+             <div class="fade-right" >
+              <div class="main">
                 <a href="/products/maple-ipad-sleeve">
-                  <img width="100%" class="image"  src="https://cdn.shopify.com/s/files/1/0691/8855/products/2_640x.jpg?v=1543225440" alt="Retro Radio" >
+                  <img  class="image" width="100%" src="https://cdn.shopify.com/s/files/1/0691/8855/products/3_new_640x.jpg?v=1543224811" alt="" />
                   <div class="overlay">
                     <div class="text-dark" >
-                      <h4>RETRO RADIO</h4>
-                      <hr style="background-color: red;" width="40px" >
+                      <h4>CUBER LAMP</h4>
                       <div class="font-weight-bold">
-                        <p class="text-muted" >FROM</p><strong>$187.00</strong>
+                        <strong class="pb-2" >$89.00</strong>
+                        <del>$109.00</del>
                       </div>
                     </div>
                   </div>
                 </a>
+              </div>
+             </div>
             </div>
-            <div class="main">
-              <a href="/products/maple-ipad-sleeve">
-                <img  class="image" width="100%" src="https://cdn.shopify.com/s/files/1/0691/8855/products/3_new_640x.jpg?v=1543224811" alt="" />
-                <div class="overlay">
-                  <div class="text-dark" >
-                    <h4>CUBER LAMP</h4>
-                    <div class="font-weight-bold">
-                      <strong class="pb-2" >$89.00</strong>
-                      <del>$109.00</del>
-                    </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
+        </div>
       </div>
       <div class="row">
         <div class="col-12 col-sm-5 col-lg-5 col-md-5 col-xl-5 bg-light ">
@@ -301,20 +389,20 @@
           </div>
         </div>
       </div>
-      <div class=" embed-responsive embed-responsive-21by9 embed-responsive-16by9  embed-responsive-4by3 embed-responsive-1by1">
+      <div class="bg-light pb-5 mb-4 box " >
+          <p>VISIT US</p>
+          <p class="pt-3 mt-3">Our address</p>
+          <address class="font-weight-bold pb-2 mb-2" >
+              93 Bayport Ave. 
+              South Richmond Hill, NY 11419
+          </address>
+          <p class="pb-2 mb-2" >Phone</p>
+          <p class="font-weight-bold pb-3 mb-3 text-dark " >+1 200 884 9600</p>
+          <p>Working hours</p>
+          <p class="text-dark" ><b>Monday – Friday, 9am – 5pm EST</b></p>
+      </div>
+      <div class="embed-responsive embed-responsive-21by9 embed-responsive-16by9  embed-responsive-4by3 embed-responsive-1by1">
         <div class="gmap_canvas">
-          <div class="bg-light pb-5 mb-4 box " >
-            <p>VISIT US</p>
-            <p class="pt-3 mt-3">Our address</p>
-            <address class="font-weight-bold pb-2 mb-2" >
-                93 Bayport Ave. 
-                South Richmond Hill, NY 11419
-            </address>
-            <p class="pb-2 mb-2" >Phone</p>
-            <p class="font-weight-bold pb-3 mb-3 text-dark " >+1 200 884 9600</p>
-            <p>Working hours</p>
-            <p class="text-dark" ><b>Monday – Friday, 9am – 5pm EST</b></p>
-          </div>
           <iframe  class="embed-responsive-item" width="1031" height="667" id="gmap_canvas" src="https://maps.google.com/maps?q=herbancepura%20lahore&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
         </div>
       </div> 
@@ -323,5 +411,7 @@
 </div>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js'></script>
 <script src="./index.js" ></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init();</script>
 </body>
 </html>

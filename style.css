@@ -26,6 +26,7 @@ div{
   display: block;
 }
 
+
 .collection{
   padding: 12px 20px;
   list-style-type: none;
@@ -159,8 +160,8 @@ div{
 }
 .box{
   box-shadow: 30%;
-  left: 50%;
-  top: 0px;
+  left: 60%;
+  top: 76%;
   right: 0px;
   padding: 20px;
   width: 30%;
@@ -168,11 +169,16 @@ div{
   position: absolute;
   z-index: 11px;
   float: left;
+  background-color: black;
 }
 
 .box h4,p,address{
   font-size: 0px 15px;
   text-align: left;
+}
+.embed-responsive{
+  z-index: -1;
+  
 }
 
 * {
@@ -189,19 +195,63 @@ div{
   .button{
     visibility: visible;
   }
-  .navbar{
+  .navbar-nav{
     visibility: hidden;
+    display: none;
     padding-top: 0px;
     margin: 0px;
     overflow: hidden;
   }
+
+  .box{
+    box-shadow: 30%;
+    left: 30%;
+    top: 94%;
+    right: 0px;
+    padding: 30px;
+    width: 60%;
+    height: auto;
+    position: absolute;
+    z-index: 1px;
+    float: left;
+    background-color: black;
+  }
+  #searchbar{
+    padding: 18px; 
+    margin-top: 45%; 
+    width: 70%; 
+    margin-left: 90px;
+    opacity: 0.5;
+  }
+  
 }
-@media screen and (max-width:3035px) and (min-width:800px ){
-  .navbar{
+@media screen and (max-width:3035px) and (min-width:900px ){
+  .navbar-nav{
     visibility: visible;
-    
   }
   .button{
     visibility: hidden;
   }
+  #searchbar{
+    padding: 35px; 
+    margin-top: 10%; 
+    width: 70%; 
+    margin-left: 210px;
+    opacity: 0.8;
+
+  }
+  .box{
+    box-shadow: 30%;
+    left: 60%;
+    top: 76%;
+    right: 0px;
+    padding: 20px;
+    width: 30%;
+    height: auto;
+    position: absolute;
+    z-index: 11px;
+    float: left;
+    background-color: black;
+  }
+  
 }
