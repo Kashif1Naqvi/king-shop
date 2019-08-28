@@ -176,10 +176,7 @@ div{
   font-size: 0px 15px;
   text-align: left;
 }
-.embed-responsive{
-  z-index: -1;
-  
-}
+
 
 * {
   box-sizing: border-box;
@@ -217,19 +214,20 @@ div{
     background-color: black;
   }
   #searchbar{
-    padding: 18px; 
-    margin-top: 45%; 
-    width: 70%; 
-    margin-left: 90px;
+    padding: 1px; 
+    float: left;
+    margin-top: 150px;
+    width: 190%; 
+    margin-right: 50px;
     opacity: 0.5;
   }
-  #searchbar{
-    width: 300px;
-    padding-top: 400px;
+  
+  .navigation{
+    position: none;
   }
   
 }
-@media screen and (max-width:3035px) and (min-width:900px ){
+@media screen and (max-width:4035px) and (min-width:800px ){
   .navbar-nav{
     visibility: visible;
   }
@@ -260,6 +258,10 @@ div{
 
   #searchbar{
     margin-left: 400px;
+  }
+  .navigation{
+    margin-right: 1550px;
+    position: fixed;
   }
   
 }
