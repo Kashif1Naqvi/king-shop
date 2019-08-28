@@ -223,6 +223,10 @@ div{
     margin-left: 90px;
     opacity: 0.5;
   }
+  #searchbar{
+    width: 300px;
+    padding-top: 400px;
+  }
   
 }
 @media screen and (max-width:3035px) and (min-width:900px ){
@@ -252,6 +256,10 @@ div{
     z-index: 11px;
     float: left;
     background-color: black;
+  }
+
+  #searchbar{
+    margin-left: 400px;
   }
   
 }
