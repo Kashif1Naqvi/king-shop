@@ -265,3 +265,11 @@ div{
   }
   
 }
+
+
+/* collections/all.html  */
+
+.hoverSlide :hover {
+    background-image:url('./images/cross.svg');
+    
+}
