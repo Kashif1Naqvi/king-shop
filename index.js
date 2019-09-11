@@ -25,8 +25,7 @@ function handleShow(){
 }
 
 function openNav() {
-  document.getElementById("myNav").style.display = "block";
-  console.log("world")
+  document.getElementById("menu").style.display = "block";
 }
 
 function closeNav() {
@@ -34,6 +33,4 @@ function closeNav() {
 }
 
 
-function prevent(event){
-  event.preventDefault()
-}
+ 

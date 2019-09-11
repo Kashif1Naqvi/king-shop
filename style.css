@@ -161,7 +161,7 @@ div{
 .box{
   box-shadow: 30%;
   left: 60%;
-  top: 76%;
+  top: 56%;
   right: 0px;
   padding: 20px;
   width: 30%;
@@ -225,6 +225,7 @@ div{
   .navigation{
     position: none;
   }
+
   
 }
 @media screen and (max-width:4035px) and (min-width:800px ){
@@ -263,13 +264,24 @@ div{
     margin-right: 1550px;
     position: fixed;
   }
-  
+  .svgLink{
+    display: flex;
+    flex-direction: row;
+  }
+   .navr{
+    position: relative;
+    float: left;
+    left: 640px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 
 
 /* collections/all.html  */
 
-.hoverSlide :hover {
-    background-image:url('./images/cross.svg');
-    
+
+.imgHover :hover {
+  background-image: url('https://image.freepik.com/free-icon/close-button-with-rounded-corners_318-9865.jpg');
+  background-size: cover;
 }
