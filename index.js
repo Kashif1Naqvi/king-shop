@@ -34,3 +34,21 @@ function closeNav() {
 
 
  
+$(".front").hover(
+  function(){
+    let id1  = document.getElementById("none")
+    $(id1).toggle(
+      function(){
+        if(id1.style.display === 'none' )    
+    {
+      $(".IMGS").collapse( function(){id1.style.display = "block"} )
+      
+    }else{
+      $(".IMGS").collapse( function(){id1.style.display = "none"} )
+    }
+      }
+    )
+  }
+)
+
+

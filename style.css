@@ -224,9 +224,7 @@ div{
   
   .navigation{
     position: none;
-  }
-
-  
+  }  
 }
 @media screen and (max-width:4035px) and (min-width:800px ){
   .navbar-nav{
@@ -269,19 +267,15 @@ div{
     flex-direction: row;
   }
    .navr{
+    width: 100%;
     position: relative;
-    float: left;
-    left: 640px;
-    display: flex;
-    flex-direction: row-reverse;
+    left: 620px;
+  }
+  .imgHover :hover {
+    background-image: url('https://image.freepik.com/free-icon/close-button-with-rounded-corners_318-9865.jpg');
+    background-size: cover;
   }
 }
 
 
-/* collections/all.html  */
 
-
-.imgHover :hover {
-  background-image: url('https://image.freepik.com/free-icon/close-button-with-rounded-corners_318-9865.jpg');
-  background-size: cover;
-}
